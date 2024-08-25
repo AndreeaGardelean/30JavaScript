@@ -1,11 +1,69 @@
+* {
+  margin: 0;
+}
+
 .clock {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('../imgs/marloes-edited.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .clock-face {
-  outline: 5px black solid;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 5rem;
+  outline: 2px black solid;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3%;
+  left: 75%;
+}
+
+.pointer {
+  position: absolute;
+  right: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-duration: 0.07s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 2rem;
+}
+
+.hour-pointer {
+  outline: 2.6px black solid;
+  width: 4rem;
+
+}
+
+.minute-pointer {
+  outline: 2px black solid;
+  width: 4.5rem;
+}
+
+.second-pointer {
+  outline: 1.5px black solid;
+  width: 4.75rem;
+}
+
+.number {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(calc(30deg * var(--i))) translate(100px) rotate(calc(-30deg * var(--i)));
+}
+
+.quote {
+  position: absolute;
+  height: fit-content;
+  top: 50%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

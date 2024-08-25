@@ -4,17 +4,34 @@
     <meta lang="en" />
     <meta charset="UTF-8" />
     <title>Clock</title>
-    <style rel="stylesheet" href="style/style.css"></style>
-    <script src="scripts/clock.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
   </head>
 
   <body>
     <div class="clock">
+      <div class="quote">
+        Time is the only thing that you can't buy more of, so use it wisely.
+      </div>
       <div class="clock-face">
-        <div class="hour-pointer"></div>
-        <div class="minute-pointer"></div>
-        <div class="second-pointer"></div>
+        <div id="hour" class="pointer hour-pointer"></div>
+        <div id="minute" class="pointer minute-pointer"></div>
+        <div id="second" class="pointer second-pointer"></div>
+
+        <div class="number" style="--i: 10">1</div>
+        <div class="number" style="--i: 11">2</div>
+        <div class="number" style="--i: 12">3</div>
+        <div class="number" style="--i: 1">4</div>
+        <div class="number" style="--i: 2">5</div>
+        <div class="number" style="--i: 3">6</div>
+        <div class="number" style="--i: 4">7</div>
+        <div class="number" style="--i: 5">8</div>
+        <div class="number" style="--i: 6">9</div>
+        <div class="number" style="--i: 7">10</div>
+        <div class="number" style="--i: 8">11</div>
+        <div class="number" style="--i: 9">12</div>
       </div>
     </div>
   </body>
+
+  <script src="scripts/clock.js"></script>
 </html>
