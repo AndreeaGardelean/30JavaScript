@@ -1,0 +1,11 @@
+.clock {
+  width: 100%;
+  height: 100vh;
+}
+
+.clock-face {
+  outline: 5px black solid;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5rem;
+}
