@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en" />
+    <meta charset="UTF-8" />
+    <title>CSS variables</title>
+    <link rel="stylesheet" href="style/style.css" />
+
+    <body>
+      <div class="container">
+        <div class="title">
+          <p>Update CSS Variables with</p>
+          <p class="js">JS</p>
+        </div>
+
+        <div class="functionalities">
+          <label for="spacing">Spacing:</label>
+          <input
+            type="range"
+            name="spacing"
+            min="10"
+            max="200"
+            value="10"
+            data-sizing="px"
+            data-type="spacing"
+          />
+
+          <label for="blur">Blur:</label>
+          <input
+            type="range"
+            name="blur"
+            min="0"
+            max="25"
+            value="0"
+            data-sizing="px"
+            data-type="blur"
+          />
+
+          <label for="colour">Base Colour:</label>
+          <input type="color" name="colour" value="#ffc600" data-type="base" />
+        </div>
+
+        <div class="image">
+          <img src="resources/plant6.JPG" />
+        </div>
+      </div>
+    </body>
+
+    <script src="script/script.js"></script>
+  </head>
+</html>
