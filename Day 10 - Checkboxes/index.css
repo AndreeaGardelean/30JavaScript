@@ -1,0 +1,39 @@
+html {
+  margin: 0;
+  background-color: #ffc600;
+}
+
+.inbox {
+  background-color: aliceblue;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+input {
+  left: 0;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  border-left: 1px black solid;
+}
