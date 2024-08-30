@@ -1,6 +1,5 @@
-
 const pressed = [];
-const pattern = 'asdfg';
+const pattern = 'hello world';
 const page = document.querySelector('.page');
 
 function keyUp(e) {
