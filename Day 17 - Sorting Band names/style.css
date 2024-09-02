@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url("dale.JPG");
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+#bands {
+  list-style: inside square;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.712);
+  width: 50%;
+  margin: auto;
+  padding: 0;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+#bands li {
+  border-bottom: 1px solid #efefefee;
+  padding: 10px;
+}
+
+#bands li:last-child {
+  border-bottom: 0;
+}
