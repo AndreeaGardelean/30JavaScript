@@ -1,7 +1,7 @@
 :root {
   --base: #ffc600;
-  --blur: 100px;
-  --spacing: 20px;
+  --blur: 0px;
+  --spacing: 10px;
 
 }
 
@@ -40,7 +40,7 @@ img {
   max-width: calc(100% - var(--spacing)*2);
   padding: var(--spacing);
   background-color: var(--base);
-  height: auto;
+  height: 70vh;
   filter: blur(var(--blur));
 }
 
